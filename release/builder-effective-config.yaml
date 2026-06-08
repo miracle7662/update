@@ -1,0 +1,19 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.Bee.pos
+productName: Bee
+files:
+  - filter:
+      - dist/**/*
+      - main.cjs
+      - preload.js
+      - db.js
+      - package.json
+extraResources: []
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+electronVersion: 41.7.1
